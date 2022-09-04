@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="gear.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 class="title">Gaming Gear Store</h4>
+            <button class="btn  btn_primary" onclick="openModal()">
+                <i class="fa fa-circle-plus"></i>
+                Add New Gear</button>
+        </div>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Ảnh</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-gear">
+            <div class="gear-header">
+                <div class="gear-title">Add new gear</div>
+                <div class="close-add" onclick="closeModal()">&times;</div>
+            </div>
+            <div class="gear-add">
+                <div class="create-gear">
+                    <div class="gear-info">
+                        <div class="gear-group">
+                            <label for="title">Tên</label>
+                            <input id="title" type="text" class="form-control">
+                        </div>
+
+                        <div class="gear-group">
+                            <label for="image">Ảnh</label>
+                            <input id="image" type="url" class="form-control" onchange="changeImage()">
+                        </div>
+                        <div class="gear-group">
+                            <label for="price">Giá</label>
+                            <input id="price" type="number" class="form-control">
+                        </div>
+
+                        <div class="gear-group">
+                            <label for="quantity">Số Lượng</label>
+                            <input id="quantity" type="number" class="form-control">
+                        </div>
+                        <div class="gear-group">
+                            <div class="mr"><button id="btnAdd" class="btn btn-warning" onclick="addGear()">Add</button></div>
+                            <div class="mr d-none"><button id="btnUpdate" class="btn btn-success" onclick="updateGear()">Save</button></div>
+                            <div><button class="btn btn-danger" onclick="closeModal()">Cancel</button></div>
+                        </div>
+                    </div>
+                    <div class="preview-image">
+                        <img class="show-image" src="" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="gear.js"></script>
+
+</html>

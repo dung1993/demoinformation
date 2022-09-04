@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0 15px;
+    background-color: lightblue;
+}
+
+
+.btn-warning{
+    background-color: blue;
+    color: #fff;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btn-warning:hover{
+    background-color: darkblue;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-danger{
+    background-color: orange;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btn-danger:hover{
+    background-color: lightyellow;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.d-none {
+    display: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Open sans-serif;
+    font-size: 40px;
+    background-color: yellow;
+    color: lightseagreen;
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.btn_primary {
+    border: 1px solid grey;
+    background-color: #81d52f;
+    color: #002e32;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px;
+    margin: 15px 0 15px 345px;
+}
+
+
+.btn_primary:hover {
+    color: #fff !important;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-success{
+    background-color: lightgreen;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    
+}
+
+.btn-success:hover{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+table>tbody>tr>td:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+
+table>tbody>tr>td{
+    height: auto;
+    padding: 15px;
+    
+}
+
+table>tbody>tr>td:last-child{
+    width: 130px;
+}
+
+table>tbody>tr>td img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+}
+
+.show-image{
+    width: 200px;
+}
+
+table {
+    border: 1px solid #000;
+    width: 1200px;
+    
+}
+
+table,
+table tr,
+table th,
+table td {
+    border-collapse: collapse;
+}
+
+table>thead>tr>th {
+    border: 1px solid #fff;
+    background-color: #002e32;
+    color: #fff;
+}
+
+table>tbody tr td {
+    border: 1px solid #002e32;
+    background-color: lightgrey;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-gear{
+    width: 600px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.gear-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.close-add:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.create-gear{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gear-info{
+    width: 60%;
+}
+
+.gear-group{
+    display: flex;
+    margin: 5px 0px;
+}
+ .gear-group:last-child {
+    float: right;
+    
+ }
+.gear-group>label{
+    width: 30%;
+}
+
+.form-control{
+    flex-grow: 1;
+    padding: 5px 3px;
+}
+.mr{
+  margin-right: 20px ;  
+}
+
+.done{
+    display: block;
+}
